@@ -95,6 +95,6 @@ abstract class ResponseAbstract
 	* @return mixed
 	*/
 	protected function xmlToArray($xml_string) {
-		return \Verdant\XML2Array::createArray($xml_string);
+		return new \SimpleXMLElement($xml_string);
 	}
 }
